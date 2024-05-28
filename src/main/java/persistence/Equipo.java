@@ -1,3 +1,5 @@
+package persistence;
+
 import jakarta.persistence.*;
 import java.util.*;
 import java.io.*;
@@ -38,7 +40,7 @@ public class Equipo implements Serializable{
 
     @Override
     public String toString() {
-        return "Equipo{" +
+        return "persistence.Equipo{" +
                 "nie=" + nie +
                 ", nombre='" + nombre + '\'' +
                 '}';

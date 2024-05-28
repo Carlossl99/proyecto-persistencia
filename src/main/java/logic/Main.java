@@ -1,5 +1,8 @@
+package logic;
+
 import jakarta.persistence.*;
 import java.util.*;
+import persistence.*;
 
 /*
 * CREACIÓN DE LAS TABLAS
@@ -14,7 +17,7 @@ import java.util.*;
     equipo_nie int references equipo(nie)
 );
 *
-* La asociación que he elegido entre la entidad Equipo y la entidad Jugador es de uno a muchos, ya que un equipo puede
+* La asociación que he elegido entre la entidad persistence.Equipo y la entidad persistence.Jugador es de uno a muchos, ya que un equipo puede
 * tener varios jugadores y un jugador solo puede estar en un equipo. Como éste puede cambiar de equipo, he hecho la asociación
 * bidireccional para saber el equipo al que pertenece un jugador, usando las anotaciones y los tipos de datos
 * apropiados en cada una de las entidades, así como la estructura de tablas en la base de datos correspondiente.

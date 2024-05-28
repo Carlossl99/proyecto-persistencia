@@ -1,3 +1,5 @@
+package persistence;
+
 import jakarta.persistence.*;
 
 import java.util.Objects;
@@ -42,7 +44,7 @@ public class Jugador {
 
     @Override
     public String toString() {
-        return "Jugador{" +
+        return "persistence.Jugador{" +
                 "nij=" + nij +
                 ", nombre='" + nombre + '\'' +
                 ", puntuacion=" + puntuacion + (equipo != null ? ", equipo=" + equipo.getNombre() + '}': '}');
